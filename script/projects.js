@@ -3,7 +3,7 @@ const projectContent = document.getElementById('projectContent')
 const projects = [
   {
     id: 1,
-    link: 'https://olivertears.github.io/resume/',
+    link: 'https://resume-olivertears.vercel.app/',
     img: '../images/Projects/resume.png',
     title: 'Resume',
     technologies: 'JavaScript',
@@ -11,7 +11,7 @@ const projects = [
   },
   {
     id: 2,
-    link: 'https://olivertears.github.io/budgettracker/',
+    link: 'https://budgettracker-olivertears.vercel.app/',
     img: '../images/Projects/budgettracker.png',
     title: 'Budget Tracker',
     technologies: 'React',
