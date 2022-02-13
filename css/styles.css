@@ -1,0 +1,289 @@
+/*
+=== Background ===
+141414 - almost black
+ffffff - white
+f2f2f2 - light-blue-gray
+
+=== Text ===
+000000 - black
+ffffff - white
+333333 - textOnHover
+ffcc00 - orange 
+*/
+
+div.fullWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =============== */
+
+div.menu {
+  height: 100px;
+  width: 40px;
+  background-size: 100%;
+  position: fixed;
+  top: 250px;
+}
+
+div.menu:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+/* =============== */
+
+div.navigation {
+  text-align: center;
+  background: #fff;
+  width: 100% + 16px;
+  height: 450px;
+  position: sticky;
+  top: 0;
+  margin: -8px -8px 0 -8px;
+  display: none;
+}
+
+div.navigationBackground {
+  background: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+button.closeBtn {
+  float: right;
+  height: 35px;
+  width: 35px;
+  margin: 20px 20px 20px 0;
+  border: none;
+  background: none;
+  background-size: 100%;
+  background-image: url('../images/closeBtn.png');
+}
+
+button.closeBtn:hover {
+  cursor: pointer;
+}
+
+div.navigation h2 {
+  font-weight: 100;
+  font-size: 40px;
+}
+
+div.navigation h2:hover {
+  cursor: pointer;
+  outline: 1px solid black;
+}
+
+/* =============== */
+
+div.wrapOnePart {
+  width: 100% + 16px;
+  height: 500px;
+  height: auto;
+  margin: 0 -8px 0 -8px;
+  top: 0;
+  left: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* =============== */
+
+div.profile {
+  background-color: #141414;
+  margin-top: -8px;
+  display: flex;
+  justify-content: center;
+}
+
+div.avatar {
+  border-radius: 15px;
+  background-size: 100%;
+  background-image: url('../images/avatar.jpg');
+  margin: 20px 0;
+}
+
+div.contentProfile {
+  height: auto;
+  margin: 20px 0;
+}
+
+div.contentProfile h1 {
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 30px;
+}
+
+div.contentProfile h3 {
+  color: #f2f2f2;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* =============== */
+
+div.contentRoadmap {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+div.contentRoadmap h2 {
+  font-weight: 400;
+}
+
+/* =============== */
+
+div.projects {
+  background-color: #f2f2f2;
+}
+
+/* =============== */
+
+div.interests {
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div.hobbiesContent h2 {
+  font-weight: 400;
+}
+
+/* =============== */
+
+div.contacts {
+  background-color: #141414;
+  margin-bottom: -8px;
+}
+
+div.contacts h1 {
+  color: #f2f2f2;
+}
+
+div.contactsContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+div.contactsContent h1 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+div.contactsContent h2 {
+  color: #f2f2f2;
+}
+
+div.contactsContent input {
+  font-family: 'Poppins';
+  width: 500px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 5px auto;
+  padding: 0 5px;
+  text-align: center;
+}
+
+div.contactsContent textarea {
+  font-family: 'Poppins';
+  width: 500px;
+  height: 100px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 5px auto;
+  padding: 5px;
+  resize: vertical;
+}
+
+button.sendMsg {
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 5px auto 20px;
+  font-weight: 100;
+}
+
+button.sendMsg h2 {
+  font-weight: 600;
+  color: black;
+}
+
+button.sendMsg:hover {
+  cursor: pointer;
+  opacity: 95%;
+}
+
+/* =============== */
+
+h1.title {
+  margin: 20px;
+  text-align: center;
+  color: black;
+}
+
+h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* =============== */
+
+@media (max-width: 700px) {
+  div.contactsContent input {
+    width: 80%;
+  }
+  div.contactsContent textarea {
+    width: 80%;
+  }
+  button.sendMsg {
+    width: 40%;
+  }
+  div.navigation {
+    height: 375px;
+  }
+  div.navigation h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 24px;
+  }
+  div.contactsContent h2 {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+}

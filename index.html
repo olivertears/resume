@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="fullWrap">
+      <div id="menu" class="menu"></div>
+      <div id="navigationBackground" class="navigationBackground"></div>
+
+      <div id="navigation" class="navigation">
+        <div style="height: 75px">
+          <button id="closeBtn" class="closeBtn"></button>
+        </div>
+        <h2 name="navigationTxt">Personal Information</h2>
+        <h2 name="navigationTxt">Programming Skills</h2>
+        <h2 name="navigationTxt">Portfolio</h2>
+        <h2 name="navigationTxt">Hobbies</h2>
+        <h2 name="navigationTxt">Contacts</h2>
+      </div>
+
+      <div name="wrapOnePart" class="wrapOnePart profile">
+        <div id="avatar" class="avatar"></div>
+        <div id="profileContent" class="contentProfile">
+          <h1>Oliver Tears</h1>
+          <h3><strong>Education: </strong>BSUIR</h3>
+          <h3><strong>Work for: </strong>Your company place :)</h3>
+          <h3>
+            <strong> Summary: </strong>Some txt about my life, my skills and so
+            on...
+          </h3>
+        </div>
+      </div>
+
+      <div name="wrapOnePart" class="wrapOnePart roadmap">
+        <h1 class="title">Learning Programming</h1>
+        <div id="contentRoadmap" class="contentRoadmap">
+          <h2>11.11.2021 - <strong>HTML</strong></h2>
+          <h2>11.11.2021 - <strong>CSS</strong></h2>
+          <h2>13.11.2021 - <strong>JavaScript</strong></h2>
+          <h2>25.12.2021 - <strong>React</strong></h2>
+          <h2>14.02.2022 - <strong>TypeScript</strong></h2>
+        </div>
+      </div>
+
+      <div name="wrapOnePart" class="wrapOnePart projects">
+        <h1 class="title">Projects</h1>
+        <div id="projectContent"></div>
+      </div>
+
+      <div name="wrapOnePart" class="wrapOnePart interests">
+        <h1 class="title">Hobbies & Interests</h1>
+        <div class="hobbiesContent">
+          <h2><strong>Music</strong> - Punk | Rock | Metal</h2>
+          <h2><strong>Videos</strong> - Premiere Pro</h2>
+          <h2><strong>Photos</strong> - Photoshop | Lighthrom</h2>
+          <h2><strong>Sport</strong> - Certificated trainer</h2>
+        </div>
+      </div>
+
+      <div name="wrapOnePart" class="wrapOnePart contacts">
+        <h1 class="title contacts">Contact Me</h1>
+        <div class="contactsContent">
+          <h2>+375291739141</h2>
+          <h2>olivertears@gmail.com</h2>
+          <h1 class="title contacts">Send a message</h1>
+          <input id="name" placeholder="Name" />
+          <input id="phone" placeholder="Phone Number" />
+          <textarea id="message" placeholder="Message to send..."></textarea>
+          <button id="button" class="sendMsg"><h2>SEND</h2></button>
+        </div>
+      </div>
+    </div>
+    <script src="./script/profile.js"></script>
+    <script src="./script/menu.js"></script>
+    <script src="./script/roadmap.js"></script>
+    <script src="./script/projects.js"></script>
+    <script src="./script/contacts.js"></script>
+  </body>
+</html>
