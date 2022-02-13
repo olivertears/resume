@@ -3,7 +3,7 @@ const projectContent = document.getElementById('projectContent')
 const projects = [
   {
     id: 1,
-    link: 'link',
+    link: 'https://github.com/olivertears/resume.git',
     img: '../images/Projects/resume.png',
     title: 'Resume',
     technologies: 'JavaScript',
@@ -11,25 +11,26 @@ const projects = [
   },
   {
     id: 2,
-    link: 'link',
-    img: '../images/Projects/resume.png',
+    link: 'https://github.com/olivertears/budgettracker.git',
+    img: '../images/Projects/budgettracker.png',
     title: 'Budget Tracker',
     technologies: 'React',
-    description: 'Some text about the project',
+    description: 'My first React experience',
   },
-  {
+  /* {
     id: 3,
     link: 'link',
-    img: '../images/Projects/resume.png',
+    img: '../images/Projects/onlinestore.png',
     title: 'Online Store',
-    technologies: 'React + TypeScript',
-    description: 'Some text about the project',
-  },
+    technologies: 'React + TypeScript + Redux',
+    description: 'Thinking about...',
+  }, */
 ]
 
 const screenForLaptop = () => {
   projects.map((project) => {
     const projectWrap = document.createElement('div')
+    const imgLink = document.createElement('a')
     const img = document.createElement('img')
     const content = document.createElement('div')
     const title = document.createElement('a')
@@ -38,12 +39,13 @@ const screenForLaptop = () => {
 
     projectContent.appendChild(projectWrap)
     if (project.id % 2 !== 0) {
-      projectWrap.appendChild(img)
+      projectWrap.appendChild(imgLink)
       projectWrap.appendChild(content)
     } else {
       projectWrap.appendChild(content)
-      projectWrap.appendChild(img)
+      projectWrap.appendChild(imgLink)
     }
+    imgLink.appendChild(img)
     content.appendChild(title)
     content.appendChild(technologies)
     content.appendChild(description)
@@ -51,6 +53,12 @@ const screenForLaptop = () => {
     projectWrap.style.display = 'flex'
     projectWrap.style.justifyContent = 'center'
     projectWrap.style.marginBottom = '20px'
+
+    imgLink.href = project.link
+    imgLink.target = '_blank'
+    imgLink.style.width = '350px'
+    imgLink.style.height = '200px'
+    imgLink.style.borderRadius = '15px'
 
     img.style.width = '350px'
     img.style.height = '200px'
@@ -64,11 +72,11 @@ const screenForLaptop = () => {
 
     title.href = project.link
     title.target = '_blank'
+    title.innerHTML = `<h2>${project.title}</h2>`
     title.style.margin = '0 10px 10px 10px'
     title.style.textAlign = 'center'
     title.style.color = 'black'
     title.style.textDecoration = 'none'
-    title.innerHTML = `<h2>${project.title}</h2>`
 
     technologies.style.margin = '0 10px 5px 10px'
     technologies.innerHTML = `<strong>Technologies: </strong>${project.technologies}`
@@ -81,6 +89,7 @@ const screenForLaptop = () => {
 const screenForTablet = () => {
   projects.map((project) => {
     const projectWrap = document.createElement('div')
+    const imgLink = document.createElement('a')
     const img = document.createElement('img')
     const content = document.createElement('div')
     const title = document.createElement('a')
@@ -89,7 +98,8 @@ const screenForTablet = () => {
 
     projectContent.appendChild(projectWrap)
     projectWrap.appendChild(content)
-    projectWrap.appendChild(img)
+    projectWrap.appendChild(imgLink)
+    imgLink.appendChild(img)
     content.appendChild(title)
     content.appendChild(technologies)
     content.appendChild(description)
@@ -97,6 +107,12 @@ const screenForTablet = () => {
     projectWrap.style.display = 'flex'
     projectWrap.style.flexDirection = 'column'
     projectWrap.style.marginBottom = '20px'
+
+    imgLink.href = project.link
+    imgLink.target = '_blank'
+    imgLink.style.width = '100%'
+    imgLink.style.height = '100% / 1.75'
+    imgLink.style.borderRadius = '15px'
 
     img.style.width = '100%'
     img.style.height = '100% / 1.75'
