@@ -3,7 +3,7 @@ const projectContent = document.getElementById('projectContent')
 const projects = [
   {
     id: 1,
-    link: 'https://github.com/olivertears/resume.git',
+    link: 'https://olivertears.github.io/resume/',
     img: '../images/Projects/resume.png',
     title: 'Resume',
     technologies: 'JavaScript',
@@ -11,7 +11,7 @@ const projects = [
   },
   {
     id: 2,
-    link: 'https://github.com/olivertears/budgettracker.git',
+    link: 'https://olivertears.github.io/budgettracker/',
     img: '../images/Projects/budgettracker.png',
     title: 'Budget Tracker',
     technologies: 'React',
