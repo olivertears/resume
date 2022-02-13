@@ -55,7 +55,7 @@ const screenForLaptop = () => {
     projectWrap.style.marginBottom = '20px'
 
     imgLink.href = project.link
-    imgLink.target = '_blank'
+    project.id === 1 ? (imgLink.target = '_self') : (imgLink.target = '_blank')
     imgLink.style.width = '350px'
     imgLink.style.height = '200px'
     imgLink.style.borderRadius = '15px'
@@ -71,7 +71,7 @@ const screenForLaptop = () => {
     content.style.flexDirection = 'column'
 
     title.href = project.link
-    title.target = '_blank'
+    project.id === 1 ? (title.target = '_self') : (title.target = '_blank')
     title.innerHTML = `<h2>${project.title}</h2>`
     title.style.margin = '0 10px 10px 10px'
     title.style.textAlign = 'center'
@@ -109,7 +109,7 @@ const screenForTablet = () => {
     projectWrap.style.marginBottom = '20px'
 
     imgLink.href = project.link
-    imgLink.target = '_blank'
+    project.id === 1 ? (imgLink.target = '_self') : (imgLink.target = '_blank')
     imgLink.style.width = '100%'
     imgLink.style.height = '100% / 1.75'
     imgLink.style.borderRadius = '15px'
@@ -125,7 +125,7 @@ const screenForTablet = () => {
     content.style.flexDirection = 'column'
 
     title.href = project.link
-    title.target = '_blank'
+    project.id === 1 ? (title.target = '_self') : (title.target = '_blank')
     title.style.margin = '0 10px 10px 10px'
     title.style.textAlign = 'center'
     title.style.color = 'black'
