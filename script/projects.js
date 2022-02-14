@@ -15,7 +15,8 @@ const projects = [
     img: '../images/Projects/budgettracker.png',
     title: 'Budget Tracker',
     technologies: 'React',
-    description: 'My first React experience',
+    description:
+      'My first React experience. Backend by <a href="https://github.com/VadimBelyaev02" target="_blank">VadimBelyaev02</a>',
   },
   /* {
     id: 3,
