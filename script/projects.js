@@ -16,7 +16,7 @@ const projects = [
     title: 'Budget Tracker',
     technologies: 'React',
     description:
-      'My first React experience. Backend by <a href="https://github.com/VadimBelyaev02" target="_blank">VadimBelyaev02</a>. If something with registration is wrong - test acc: lol@gmail.com, pass: 1111',
+      'My first React experience. Backend by <a href="https://github.com/VadimBelyaev02" target="_blank">VadimBelyaev02</a>',
   },
   /* {
     id: 3,
