@@ -180,6 +180,10 @@ div.contactsContent h2 {
   color: #f2f2f2;
 }
 
+div.contactsContent a {
+  text-decoration: none;
+}
+
 div.contactsContent input {
   font-family: 'Poppins';
   width: 500px;

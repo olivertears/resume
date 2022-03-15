@@ -18,14 +18,14 @@ const projects = [
     description:
       'My first React experience. Backend by <a href="https://github.com/VadimBelyaev02" target="_blank">VadimBelyaev02</a>',
   },
-  /* {
+  {
     id: 3,
-    link: 'link',
-    img: '../images/Projects/onlinestore.png',
-    title: 'Online Store',
+    link: 'https://sneakerstore.vercel.app/',
+    img: '../images/Projects/sneakerstore.png',
+    title: 'Sneaker Store',
     technologies: 'React + TypeScript + Redux',
-    description: 'Thinking about...',
-  }, */
+    description: 'Working on...',
+  },
 ]
 
 const screenForLaptop = () => {
