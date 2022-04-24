@@ -29,7 +29,7 @@ const projects = [
 ]
 
 const screenForLaptop = () => {
-  projects.reverse().map((project, idx) => {
+  projects.reverse().map((project) => {
     const projectWrap = document.createElement('div')
     const imgLink = document.createElement('a')
     const img = document.createElement('img')
@@ -73,7 +73,7 @@ const screenForLaptop = () => {
 
     title.href = project.link
     project.id === 1 ? (title.target = '_self') : (title.target = '_blank')
-    title.innerHTML = `<h2>${idx + 1}. ${project.title}</h2>`
+    title.innerHTML = `<h2>${project.id}. ${project.title}</h2>`
     title.style.margin = '0 10px 10px 10px'
     title.style.textAlign = 'center'
     title.style.color = 'black'
@@ -88,7 +88,7 @@ const screenForLaptop = () => {
 }
 
 const screenForTablet = () => {
-  projects.reverse().map((project, idx) => {
+  projects.reverse().map((project) => {
     const projectWrap = document.createElement('div')
     const imgLink = document.createElement('a')
     const img = document.createElement('img')
@@ -131,7 +131,7 @@ const screenForTablet = () => {
     title.style.textAlign = 'center'
     title.style.color = 'black'
     title.style.textDecoration = 'none'
-    title.innerHTML = `<h2>${idx + 1}. ${project.title}</h2>`
+    title.innerHTML = `<h2>${project.id}. ${project.title}</h2>`
 
     technologies.style.margin = '0 10px 5px 10px'
     technologies.innerHTML = `<strong>Technologies: </strong>${project.technologies}`
