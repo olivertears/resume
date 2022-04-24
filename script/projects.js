@@ -29,7 +29,7 @@ const projects = [
 ]
 
 const screenForLaptop = () => {
-  projects.map((project) => {
+  projects.reverse().map((project) => {
     const projectWrap = document.createElement('div')
     const imgLink = document.createElement('a')
     const img = document.createElement('img')
@@ -88,7 +88,7 @@ const screenForLaptop = () => {
 }
 
 const screenForTablet = () => {
-  projects.map((project) => {
+  projects.reverse().map((project) => {
     const projectWrap = document.createElement('div')
     const imgLink = document.createElement('a')
     const img = document.createElement('img')
